@@ -3,7 +3,6 @@ package addressbook;
 import java.util.Scanner;
 
 public class AddContact {
-
 	static final int ADD_PERSON = 1;
 	private String first_name ;
 	private String last_name ;
@@ -15,6 +14,10 @@ public class AddContact {
 	private String email;
 	;
 	Scanner scanner = new Scanner(System.in);
+	/*
+	 *taking input from the user  
+	 * using console
+	 */
 	public void  addContact() {
 		AddContact person = new AddContact();
 		System.out.println("Enter First Name : ");
@@ -35,12 +38,20 @@ public class AddContact {
 		email = scanner.next();
 	}
 
+	/*
+	 * Indicates that a method declaration is intended to override a method declaration in a super type.  
+	 */
 	@Override
 	public String toString() {
 		return "[first name : " + first_name + ", last name : " + last_name + ", address : " + address + ", city : "
 				+ city + ", state : " + state + ", zip code : " + zip_code + ", phone number : " + phone_number + ", email : "
 				+ email + "]";
 	}
+	/*
+	 *making getters and setters 
+	 * to make private members accesible
+	 * outside the class 
+	 */
 	public String getFirst_name() {
 		return first_name;
 	}

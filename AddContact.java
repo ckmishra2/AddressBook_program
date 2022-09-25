@@ -3,7 +3,7 @@ package addressbook;
 import java.util.Scanner;
 
 public class AddContact {
-	static final int AddPerson= 1;
+	static final int AddPerson = 1;
 	private String firstName ;
 	private String lastName ;
 	private String address ;

@@ -46,7 +46,7 @@ public class AddressBookMain {
 						list.set(j,newperson);
 						System.out.println("Done Editing ! ");
 						System.out.println("type 1 to add more person\n type 2 to edit added person\n type 3 to "
-								+ "delete contact\n type 0 to exit");
+								+ "type 4 to add more adrressbook"+ "delete contact\n type 0 to exit");
 						break;
 					}
 				}
@@ -83,11 +83,11 @@ public class AddressBookMain {
 			}
 	}
 	public static void main(String[] args) {
-		AddressBookMain start =new 	AddressBookMain(); 
+		AddressBookMain bootCamp = new AddressBookMain(); 
 		AddressBookMain RFP = new AddressBookMain();
 		AddressBookMain TFP = new AddressBookMain();
 		AddressBookMain CFP = new AddressBookMain();
-		start.start();
+		bootCamp.start();
 		TFP.start();
 		RFP.start();
 		CFP.start();

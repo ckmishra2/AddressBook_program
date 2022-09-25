@@ -3,14 +3,14 @@ package addressbook;
 import java.util.Scanner;
 
 public class AddContact {
-	static final int ADD_PERSON = 1;
-	private String first_name ;
-	private String last_name ;
+	static final int AddPerson= 1;
+	private String firstName ;
+	private String lastName ;
 	private String address ;
 	private String city ;
 	private String state ;
-	private int zip_code;
-	private long phone_number;
+	private int zipCode;
+	private long phoneNumber;
 	private String email;
 	;
 	Scanner scanner = new Scanner(System.in);
@@ -21,9 +21,9 @@ public class AddContact {
 	public void  addContact() {
 		AddContact person = new AddContact();
 		System.out.println("Enter First Name : ");
-		first_name = scanner.next();
+		firstName = scanner.next();
 		System.out.println("Enter Last Name : ");
-		last_name = scanner.next();
+		lastName = scanner.next();
 		System.out.println("Enter Address : ");
 		address = scanner.next();
 		System.out.println("Enter City : ");
@@ -31,9 +31,9 @@ public class AddContact {
 		System.out.println("Enter State : ");
 		state = scanner.next();
 		System.out.println("Enter ZipCode : ");
-		zip_code = scanner.nextInt();
+		zipCode = scanner.nextInt();
 		System.out.println("Enter Mobile Number : ");
-		phone_number = scanner.nextLong();
+		phoneNumber = scanner.nextLong();
 		System.out.println("Enter EmailId : ");
 		email = scanner.next();
 	}
@@ -43,8 +43,8 @@ public class AddContact {
 	 */
 	@Override
 	public String toString() {
-		return "[first name : " + first_name + ", last name : " + last_name + ", address : " + address + ", city : "
-				+ city + ", state : " + state + ", zip code : " + zip_code + ", phone number : " + phone_number + ", email : "
+		return "[first name : " + firstName + ", last name : " + lastName + ", address : " + address + ", city : "
+				+ city + ", state : " + state + ", zip code : " + zipCode + ", phone number : " + phoneNumber + ", email : "
 				+ email + "]";
 	}
 	/*
@@ -52,17 +52,17 @@ public class AddContact {
 	 * to make private members accesible
 	 * outside the class 
 	 */
-	public String getFirst_name() {
-		return first_name;
+	public String getFirstname() {
+		return firstName;
 	}
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
+	public void setFirst_name(String firstname) {
+		this.firstName = firstname;
 	}
-	public String getLast_name() {
-		return last_name;
+	public String getLastname() {
+		return lastName;
 	}
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
+	public void setLast_name(String lastname) {
+		this.lastName = lastname;
 	}
 	public String getAddress() {
 		return address;
@@ -82,17 +82,17 @@ public class AddContact {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public int getZip_code() {
-		return zip_code;
+	public int getZipcode() {
+		return zipCode;
 	}
-	public void setZip_code(int zip_code) {
-		this.zip_code = zip_code;
+	public void setZipcode(int zipcode) {
+		this.zipCode = zipcode;
 	}
-	public long getPhone_number() {
-		return phone_number;
+	public long getPhoneNumber() {
+		return phoneNumber;
 	}
-	public void setPhone_number(long phone_number) {
-		this.phone_number = phone_number;
+	public void setPhoneNumber(long phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	public String getEmail() {
 		return email;
